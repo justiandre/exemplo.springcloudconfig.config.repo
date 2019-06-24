@@ -1,0 +1,19 @@
+config:
+  global: "config global"
+  valor-test: "Arquivo default application.yml"
+management:
+  security:
+    enabled: false 
+logging:
+  level: 
+    root: info
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus.enabled: true
+server:
+  port: 8080
